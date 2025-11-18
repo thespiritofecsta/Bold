@@ -1,6 +1,7 @@
 # Bold - Decentralized Prediction Markets
 
-![Bold Logo](https://i.ibb.co/G45wT806/boldlogotransparent.png)
+ 
+<img width="1402" height="282" alt="boldlogotransparent" src="https://github.com/user-attachments/assets/30727524-b8af-4fea-97e8-22c5b6b917d9" />
 
 **Bold** is a decentralized prediction market platform where you can bet on the outcomes of future events. From politics and sports to technology and finance, if an event has a verifiable outcome, you can create a market for it on Bold.
 
