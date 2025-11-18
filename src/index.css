@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+  }
+}
+
+html,
+body {
+  @apply dark;
+}
+
+body {
+  color: hsl(var(--foreground));
+  background: hsl(var(--background));
+  font-family: 'Bricolage Grotesque', sans-serif;
+  min-height: 100vh;
+  background-image: radial-gradient(ellipse at center, hsla(var(--background), 1) 20%, transparent 80%), linear-gradient(rgba(255, 255, 255, 0.03) 2px, transparent 2px), linear-gradient(90deg, rgba(255, 255, 255, 0.03) 2px, transparent 2px), linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, rgba(3, 3, 3, 0.01) 1px);
+  background-position: center, -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+  background-size: 100% 100%, 400px 400px, 400px 400px, 80px 80px, 80px 80px;
+}
+
+.wallet-adapter-button {
+  background-image: none !important;
+  background-color: hsl(var(--primary)) !important;
+  color: hsl(var(--primary-foreground)) !important;
+  border-radius: 9999px !important;
+  font-family: 'Bricolage Grotesque', sans-serif !important;
+}

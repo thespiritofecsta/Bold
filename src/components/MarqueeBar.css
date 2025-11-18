@@ -1,0 +1,21 @@
+/* MarqueeBar.css */
+
+.marquee {
+  display: inline-block;
+  animation: marquee-animation 30s linear infinite; /* Adjust duration as needed */
+  padding-left: 100%; /* Start text off-screen to the right */
+}
+
+.marquee span {
+  font-weight: bold;
+  font-size: 1.1rem; /* Adjust font size as needed */
+}
+
+@keyframes marquee-animation {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%); /* Scroll from right to left */
+  }
+}
